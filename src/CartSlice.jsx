@@ -12,8 +12,10 @@ const CartSlice = createSlice({
     removeItem: (state, action) => {
     },
     updateQuantity: (state, action) => {
-    }
+    },
     clearCart: (state) => {
+        state.items = [];    // Clear all items from cart
+        state.total = 0
     },
   },
 });
